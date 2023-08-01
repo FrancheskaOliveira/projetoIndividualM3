@@ -1,6 +1,11 @@
+
+# dbdiagram: https://dbdiagram.io/d/64c8fb9702bd1c4a5e0d2419
+
+# -------- Criação do banco de dados -------- #
 CREATE DATABASE IF NOT EXISTS biblioteca; 
 USE biblioteca;
 
+# -------- Criação da tabela Autor para conter as informações dos autores -------- #
 CREATE TABLE `Autor` (
   `id` INT PRIMARY KEY,
   `nome` VARCHAR(100),
@@ -8,6 +13,7 @@ CREATE TABLE `Autor` (
   `data_nascimento` DATE
 );
 
+# -------- Criação da tabela Editora para conter as informações das editoras -------- #
 CREATE TABLE `Editora` (
   `id` INT PRIMARY KEY,
   `nome` VARCHAR(100),
@@ -15,6 +21,7 @@ CREATE TABLE `Editora` (
   `ano_fundacao` INT
 );
 
+# -------- Criação da tabela Livro para conter as informações dos livros -------- #
 CREATE TABLE `Livro` (
   `id` INT PRIMARY KEY,
   `titulo` VARCHAR(200),
@@ -27,6 +34,7 @@ CREATE TABLE `Livro` (
   FOREIGN KEY (editora_id) REFERENCES Editora(id)
 );
 
+# -------- Criação da tabela Cliente para conter as informações dos clientes -------- #
 CREATE TABLE `Cliente` (
   `id` INT PRIMARY KEY,
   `nome` VARCHAR(100),
@@ -35,6 +43,7 @@ CREATE TABLE `Cliente` (
   `telefone` VARCHAR(20)
 );
 
+# -------- Criação da tabela Emprestimo para conter as informações dos emprestimos -------- #
 CREATE TABLE `Emprestimo` (
   `id` INT PRIMARY KEY,
   `data_emprestimo` DATE,
