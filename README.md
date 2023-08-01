@@ -11,5 +11,5 @@ E por ultimo, no próprio MYSQL foi feita a população ficticia  das tabelas
 fazendo a cópia para o MYSQL ou
 git clone https://github.com/FrancheskaOliveira/projetoIndividualM3.git
 
-Observações finais
-Neste projeto foi possivél mostrar habilidades básicas em Dbdiagram e MYSQL
+<h3>Observações finais</h3>
+Neste projeto foi possivél mostrar habilidades básicas em Dbdiagram e MYSQL.
