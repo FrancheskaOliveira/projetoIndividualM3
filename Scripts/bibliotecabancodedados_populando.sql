@@ -1,3 +1,4 @@
+---------------------- Inserindo registros na tabela Autor: -------------------
 INSERT INTO Autor (id, nome, pais_de_origem, data_nascimento)
 	VALUES
   (1, 'Joao Maria', 'Estados Unidos', '1980-05-15'),
@@ -5,7 +6,8 @@ INSERT INTO Autor (id, nome, pais_de_origem, data_nascimento)
   (3, 'Michael Lee', 'Canadá', '1988-11-10'),
   (4, 'Albert Jose', 'Alemanha', '1992-03-25'),
   (5, 'Luiz Martinez', 'Espanha', '1983-07-12');
-  
+
+---------------------- Inserindo registros na tabela Editora: -------------------  
 INSERT INTO Editora (id, nome, localizacao, ano_fundacao)
 	VALUES
   (1, 'Editora Books', 'Rua das Letras, 123', 1990),
@@ -14,6 +16,7 @@ INSERT INTO Editora (id, nome, localizacao, ano_fundacao)
   (4, 'Intrinseca', 'Rua dos Livros, 1010', 1995),
   (5, 'Livro e Arte', 'Avenida Literária, 222', 2009);
 
+---------------------- Inserindo registros na tabela Livro: -------------------
 INSERT INTO Livro (id, titulo, autor_id, editora_id, genero, ano_publicacao, disponivel)
 	VALUES
   (1, 'A Mumia', 1, 1, 'Fantasia', 2000, true),
@@ -22,6 +25,7 @@ INSERT INTO Livro (id, titulo, autor_id, editora_id, genero, ano_publicacao, dis
   (4, 'As Cronicas de Melody', 4, 4, 'Fantasia', 2015, true),
   (5, 'A Saga do Desconhecido', 5, 5, 'Sci-Fi', 2020, true);
 
+---------------------- Inserindo registros na tabela Cliente: -------------------
 INSERT INTO Cliente (id, nome, email, endereco, telefone)
 	VALUES
   (1, 'Ana Silva', 'ana.silva@email.com', 'Rua das Flores, 100', '(45)456-7890'),
@@ -30,6 +34,7 @@ INSERT INTO Cliente (id, nome, email, endereco, telefone)
   (4, 'Arthur Gomes', 'arthur.gomes@email.com', 'Rua das Estrelas, 400', '(44)555-6666'),
   (5, 'Luana Rodrigues', 'luana.rodrigues@email.com', 'Avenida dos Sonhos, 500', '(77)888-9999');
 
+---------------------- Inserindo registros na tabela Emprestimo: -------------------
 INSERT INTO Emprestimo (id, data_emprestimo, data_devolucao, livro_id, cliente_id)
 	VALUES
   (1, '2023-07-01', '2023-07-15', 1, 1),
